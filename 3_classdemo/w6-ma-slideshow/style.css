@@ -82,7 +82,6 @@ ul {
   width: 100%;
   height: 350px;
   background: url("./image/slide1.png") no-repeat center center/cover;
-  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,10 +230,127 @@ ul {
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
+  margin-bottom: 20px;
 }
 
 .slideshow .dot .dot:hover {
   background-color: #717171;
+}
+
+.slideshow .carousel {
+  width: 800px;
+  margin: 40px auto;
+  background-color: #087f5b;
+  /* padding: 32px; */
+  /* padding-left: 86px; */
+  /* padding-right: 48px; */
+  padding: 32px 48px 38px 86px;
+  border-radius: 8px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 86px;
+  /* CONTROLS */
+}
+
+.slideshow .carousel img {
+  height: 200px;
+  border-radius: 8px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.slideshow .carousel .testimonial-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #e6fcf5;
+}
+
+.slideshow .carousel .testimonial-author {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #c3fae8;
+}
+
+.slideshow .carousel .testimonial-job {
+  font-size: 12px;
+  color: #c3fae8;
+}
+
+.slideshow .carousel .btn {
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slideshow .carousel .btn--left {
+  /* In relation to PARENTE ELEMENT */
+  left: 0;
+  top: 50%;
+  /* In relation to ELEMENT ITSELF */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.slideshow .carousel .btn--right {
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.slideshow .carousel .btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #087f5b;
+}
+
+.slideshow .carousel .dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 32px);
+          transform: translate(-50%, 32px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.slideshow .carousel .dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid #087f5b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slideshow .carousel .dot--fill {
+  background-color: #087f5b;
 }
 
 /* HOME-CARD */

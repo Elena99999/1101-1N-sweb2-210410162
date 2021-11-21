@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HERO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2 class="hero">HERO</h2>
+
+    <div class="slider">
+		<!-- fade css -->
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Bixby Creek Birdge</h1>
+				<p>橫跨峽谷的知名水泥橋樑，高280英尺<br>第一次自己開這麼遠的車看景點<br>來回200英里</p>
+			</div>
+			<img src="./img/img1.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Half Moon Bay</h1>
+				<p>位於舊金山灣區<br>這是我在灣區最喜歡的海邊</p>
+			</div>
+			<img src="./img/img2.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>BMW 2001 325I</h1>
+				<p>我的第一台車<br>陪伴我2年的美國生活</p>
+			</div>
+			<img src="./img/img3.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>SANTA CRUZ BEACH</h1>
+				<p>說走就走<br>誰會去海邊穿馬丁呢?<br>我!</p>
+			</div>
+			<img src="./img/img4.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Boardwalk</h1>
+				<p>坐落於一英里長沙灘上遊樂園<br>疫情期間沒有設施可以玩<br>只能拍拍照片</p>
+			</div>
+			<img src="./img/img5.jpg" style="width: 100%; height: 100%;">
+		</div>
+		<!-- /fade css -->
+		
+		<!-- onclick js -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+		<!-- /onclick js -->
+	</div>
+	
+<script src="jsfile.js"></script>
+
+<div class= "hero">
+	<a href="./index.html">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		BACK
+	  </a>
+</div>
+</body>
+</html>
